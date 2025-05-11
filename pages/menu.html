@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Maran Barotta Kadai</title>
+    <link rel="icon" type="image/x-icon" href="..\assets\logo\maran-barotta.png"/>
+    <link rel="stylesheet" href="..\src\css\styles.css"/>
+    <style>
+        .menu-container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .menu-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-family: var(--font-accent);
+            color: var(--color-primary);
+        }
+        
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .menu-item {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .menu-item-info {
+            padding: 1.5rem;
+            background-color: white;
+        }
+        
+        .menu-item-title {
+            font-family: var(--font-baloo);
+            font-weight: 700;
+            color: var(--color-secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .menu-item-price {
+            color: var(--color-primary);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        
+        .menu-item-desc {
+            color: var(--color-muted);
+            margin-bottom: 1rem;
+        }
+        
+        .order-btn {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .order-btn:hover {
+            background-color: #e5a200;
+        }
+    </style>
+</head>
 
+<body>
+    <nav>
+        <img class="logo" src="..\assets\logo\maran-barotta.png" alt="logo"/>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="memes.html">Memes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="..\index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <div class="menu-container">
+        <h1 class="menu-title">Our Signature Dishes</h1>
+        
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="..\assets\images\menu\kothu.png" alt="Kothu Parotta">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Kothu Parotta</h3>
+                    <p class="menu-item-price">₹120</p>
+                    <p class="menu-item-desc">Our signature dish! Shredded parotta mixed with spices, vegetables, and your choice of protein.</p>
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="..\assets\images\menu\chicken-kothu.png" alt="Chicken Kothu">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Chicken Kothu Parotta</h3>
+                    <p class="menu-item-price">₹180</p>
+                    <p class="menu-item-desc">Shredded parotta mixed with tender chicken pieces and our special spice blend.</p>
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="..\assets\images\menu\kizhi.png" alt="Kizhi Parotta">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Kizhi Parotta</h3>
+                    <p class="menu-item-price">₹160</p>
+                    <p class="menu-item-desc">Parotta cooked with special masala and wrapped in banana leaf to lock in flavors.</p>
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="..\assets\images\menu\chilli.png" alt="Chilli Parotta">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Chilli Parotta</h3>
+                    <p class="menu-item-price">₹140</p>
+                    <p class="menu-item-desc">Spicy stir-fried parotta with bell peppers, onions, and our signature chilli sauce.</p>
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="..\assets\images\menu\poricha.png" alt="Poricha Parotta">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Poricha Parotta</h3>
+                    <p class="menu-item-price">₹130</p>
+                    <p class="menu-item-desc">Crispy fried parotta perfect for dipping in our special curry or chutney.</p>
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="..\assets\images\menu\bun.png" alt="Bun Parotta">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Bun Parotta</h3>
+                    <p class="menu-item-price">₹25</p>
+                    <p class="menu-item-desc">Our special bun-shaped parotta, soft inside and crispy outside, perfect for any curry.</p>
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+            
+            <div class="menu-item">
+                <img src="..\assets\images\menu\mallu.png" alt="Mallu Parotta">
+                <div class="menu-item-info">
+                    <h3 class="menu-item-title">Mallu Parotta</h3>
+                    <p class="menu-item-price">₹35</p>
+                    <p class="menu-item-desc">Kerala style layered parotta, perfectly crispy and flaky with traditional flavors.</p>
+                    <a href="contact.html" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p> 2025 Maran Barotta Kadai. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

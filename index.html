@@ -3,15 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maran Barotta Kadai</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo/maran-barotta.png" />
+    <title>MBK | Maran Barotta Kadai</title>
+    <link rel="icon" type="image/x-icon" href="assets\logo\maran-barotta.png"/>
+    <link rel="stylesheet" href="src\css\styles.css"/>
+    <style>
+        .audio-controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--color-primary);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .audio-controls i {
+            margin-right: 8px;
+        }
+        
+        .audio-controls.playing {
+            background-color: var(--color-accent);
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <div class="nav-btn">
-        <button></button>
-        <button></button>
-        <button></button>
+    <nav>
+        <img class="logo" src="assets\logo\maran-barotta.png" alt="logo"/>
+        <ul>
+            <li><a href="pages\menu.html">Menu</a></li>
+            <li><a href="pages\memes.html">Memes</a></li>
+            <li><a href="pages\contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <div class="hero">
+        <h1>Maran Barotta Kadai</h1>
+        <p>Barotta Nale Maran Barotta kadai thanga</p>
+        <div class="hero-buttons">
+            <a href="pages\menu.html" class="cta-button primary-btn">View Menu</a>
+            <a href="pages\contact.html" class="cta-button secondary-btn">Order Now</a>
+        </div>
     </div>
+    
+    <div class="features-section">
+        <div class="feature">
+            <img src="assets\images\menu\kothu.png" alt="Fresh Ingredients" class="feature-image">
+            <h3>Fresh Ingredients</h3>
+            <p>We use only the freshest ingredients for our parottas, ensuring quality with every bite.</p>
+        </div>
+        
+        <div class="feature">
+            <img src="assets\images\menu\kizhi.png" alt="Traditional Recipe" class="feature-image">
+            <h3>Traditional Recipe</h3>
+            <p>Our recipes have been passed down for generations, maintaining the authentic taste.</p>
+        </div>
+        
+        <div class="feature">
+            <img src="assets\images\menu\chicken-kothu.png" alt="Variety of Options" class="feature-image">
+            <h3>Variety of Options</h3>
+            <p>From classic parottas to innovative varieties, we have something for everyone.</p>
+        </div>
+    </div>
+    
+    <div class="about-section">
+        <div class="about-content">
+            <h2>Our Story</h2>
+            <p>Maran Barotta Kadai started as a small family business in the heart of Tamil Nadu. What began as a passion for creating the perfect parotta has grown into one of the most beloved parotta destinations in the region.</p>
+            <p>We take pride in our traditional methods while constantly innovating to bring you new and exciting flavors. Every parotta is made with love and served with pride.</p>
+            <a href="pages\contact.html" class="cta-button primary-btn">Visit Us</a>
+        </div>
+        <div class="about-image">
+            <img src="assets\images\maran-parotta-kadai.png" alt="Maran Barotta Kadai Restaurant">
+        </div>
+    </div>
+    
+    <div class="testimonials-section">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <p class="testimonial-text">"The best parotta I've ever had! The kothu parotta is absolutely divine."</p>
+                <p class="testimonial-author">- Rajesh K.</p>
+            </div>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">"I drive 30 minutes just to eat at Maran Barotta Kadai. Worth every kilometer!"</p>
+                <p class="testimonial-author">- Priya M.</p>
+            </div>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">"Their chilli parotta is the perfect blend of spice and flavor. Can't get enough!"</p>
+                <p class="testimonial-author">- Karthik S.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets\logo\maran-barotta.png" alt="Maran Barotta Kadai Logo" width="100">
+                <h3>Maran Barotta Kadai</h3>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages\menu.html">Menu</a></li>
+                    <li><a href="pages\memes.html">Memes</a></li>
+                    <li><a href="pages\contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>123 Parotta Street, Chennai</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Email: info@maranbarottakadai.com</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Maran Barotta Kadai. All rights reserved.</p>
+        </div>
+    </footer>
+    <audio id="bgMusic" loop>
+        <source src="assets/audio/Trending மறன பரடட கட.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <div class="audio-controls" id="audioControls">
+        <i class="fas fa-play" id="audioIcon"></i>
+        <span id="audioText">Play Music</span>
+    </div>
+
+    <script>
+        // Function to handle audio playback on page load with user interaction
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('bgMusic');
+            const audioControls = document.getElementById('audioControls');
+            const audioIcon = document.getElementById('audioIcon');
+            const audioText = document.getElementById('audioText');
+            let hasInteracted = false;
+
+            // Check if the user has visited before using localStorage
+            const hasVisitedBefore = localStorage.getItem('hasVisitedMBK');
+            
+            // Function to toggle audio playback
+            function toggleAudio() {
+                if (audio.paused) {
+                    audio.play();
+                    audioControls.classList.add('playing');
+                    audioIcon.classList.remove('fa-play');
+                    audioIcon.classList.add('fa-pause');
+                    audioText.textContent = 'Pause Music';
+                } else {
+                    audio.pause();
+                    audioControls.classList.remove('playing');
+                    audioIcon.classList.remove('fa-pause');
+                    audioIcon.classList.add('fa-play');
+                    audioText.textContent = 'Play Music';
+                }
+            }
+
+            // Add click event to audio controls
+            audioControls.addEventListener('click', function() {
+                toggleAudio();
+                hasInteracted = true;
+            });
+
+            // Attempt to autoplay only for first-time visitors after a short delay
+            if (!hasVisitedBefore) {
+                // Set that the user has visited
+                localStorage.setItem('hasVisitedMBK', 'true');
+                
+                // Try to autoplay after user has interacted with the page
+                const autoplayAttempt = function() {
+                    if (!hasInteracted) {
+                        audio.play().then(() => {
+                            audioControls.classList.add('playing');
+                            audioIcon.classList.remove('fa-play');
+                            audioIcon.classList.add('fa-pause');
+                            audioText.textContent = 'Pause Music';
+                        }).catch(e => {
+                            // Autoplay was prevented - do nothing, user can click the button
+                            console.log('Autoplay prevented:', e);
+                        });
+                    }
+                };
+                
+                // Add event listeners for user interaction
+                const startAudioOnInteraction = function() {
+                    if (!hasInteracted) {
+                        autoplayAttempt();
+                        hasInteracted = true;
+                    }
+                    // Remove the event listeners after first interaction
+                    document.removeEventListener('click', startAudioOnInteraction);
+                    document.removeEventListener('touchstart', startAudioOnInteraction);
+                    document.removeEventListener('scroll', startAudioOnInteraction);
+                };
+                
+                document.addEventListener('click', startAudioOnInteraction);
+                document.addEventListener('touchstart', startAudioOnInteraction);
+                document.addEventListener('scroll', startAudioOnInteraction);
+            }
+        });
+    </script>
 </body>
 </html>
-

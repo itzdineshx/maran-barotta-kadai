@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memes | Maran Barotta Kadai</title>
+    <link rel="icon" type="image/x-icon" href="..\assets\logo\maran-barotta.png"/>
+    <link rel="stylesheet" href="..\src\css\styles.css"/>
+    <style>
+        .memes-container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .memes-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-family: var(--font-accent);
+            color: var(--color-primary);
+        }
+        
+        .memes-subtitle {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--color-muted);
+            font-size: 1.1rem;
+        }
+        
+        .memes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .meme-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            transition: transform 0.3s ease;
+        }
+        
+        .meme-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .meme-content {
+            padding: 1.5rem;
+        }
+        
+        .meme-content h3 {
+            font-family: var(--font-baloo);
+            color: var(--color-secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .meme-content p {
+            color: var(--color-text);
+            margin-bottom: 1rem;
+        }
+        
+        .share-btn {
+            display: inline-block;
+            background-color: var(--color-accent);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .share-btn:hover {
+            background-color: #e5a200;
+        }
+        
+        .cta-section {
+            margin-top: 4rem;
+            text-align: center;
+            padding: 2rem;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+        }
+        
+        .cta-section h2 {
+            font-family: var(--font-accent);
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        
+        .meme-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .meme-quote {
+            font-style: italic;
+            color: var(--color-muted);
+            border-left: 3px solid var(--color-accent);
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
 
+<body>
+    <nav>
+        <img class="logo" src="..\assets\logo\maran-barotta.png" alt="logo"/>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="memes.html">Memes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="..\index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <div class="memes-container">
+        <h1 class="memes-title">Parotta Memes</h1>
+        <p class="memes-subtitle">Because laughter is the best side dish to our Parottas!</p>
+        
+        <div class="memes-grid">
+            <div class="meme-card">
+                <img src="..\assets\images\maran-parotta-kadai.png" alt="Maran Parotta Kadai Kalugumalai" class="meme-image">
+                <div class="meme-content">
+                    <h3>Maran Parotta Kadai Kalugumalai</h3>
+                    <p>The original viral sensation that took the internet by storm!</p>
+                    <p class="meme-quote">"Parotta nale Maran Parotta Kadai thanga!"</p>
+                    <button class="share-btn">Share This</button>
+                </div>
+            </div>
+            
+            <div class="meme-card">
+                <img src="..\assets\images\menu\kothu.png" alt="Kovilvasal Kalugumalai" class="meme-image">
+                <div class="meme-content">
+                    <h3>Kovilvasal Kalugumalai</h3>
+                    <p>When your friend asks where the best parotta spot is located.</p>
+                    <p class="meme-quote">"You know where... KALUGUMALAI!"</p>
+                    <button class="share-btn">Share This</button>
+                </div>
+            </div>
+            
+            <div class="meme-card">
+                <img src="..\assets\images\menu\kizhi.png" alt="Saturday Gaming Day" class="meme-image">
+                <div class="meme-content">
+                    <h3>Saturday Gaming Day</h3>
+                    <p>When you and the boys finish gaming and need to refuel at Maran Parotta Kadai.</p>
+                    <p class="meme-quote">"Saturday is gaming day, Sunday is Maran Parotta day! 🎮"</p>
+                    <button class="share-btn">Share This</button>
+                </div>
+            </div>
+            
+            <div class="meme-card">
+                <img src="..\assets\images\menu\chicken-kothu.png" alt="Roadside Food King" class="meme-image">
+                <div class="meme-content">
+                    <h3>Roadside Food King</h3>
+                    <p>Who needs fancy restaurants when you have Maran Parotta Kadai?</p>
+                    <p class="meme-quote">"5-star hotels < Maran Parotta Kadai roadside experience"</p>
+                    <button class="share-btn">Share This</button>
+                </div>
+            </div>
+            
+            <div class="meme-card">
+                <img src="..\assets\images\menu\chilli.png" alt="Brainrot Warning" class="meme-image">
+                <div class="meme-content">
+                    <h3>Brainrot Warning</h3>
+                    <p>When you can't get the Maran Parotta Kadai jingle out of your head for a week.</p>
+                    <p class="meme-quote">"Brainrot warning ⚠️ - The jingle is too catchy!"</p>
+                    <button class="share-btn">Share This</button>
+                </div>
+            </div>
+            
+            <div class="meme-card">
+                <img src="..\assets\images\menu\mallu.png" alt="Part 2 Coming Soon" class="meme-image">
+                <div class="meme-content">
+                    <h3>Part 2 Coming Soon</h3>
+                    <p>When everyone is waiting for the sequel to the viral Maran Parotta Kadai video.</p>
+                    <p class="meme-quote">"Maran Parotta Kadai Part 2: The Return to Kalugumalai"</p>
+                    <button class="share-btn">Share This</button>
+                </div>
+            </div>
+            
+            <div class="meme-card">
+                <img src="..\assets\images\menu\bun.png" alt="Friend Goals" class="meme-image">
+                <div class="meme-content">
+                    <h3>Friend Goals</h3>
+                    <p>When your squad rolls up to Maran Parotta Kadai at 2 AM after a night out.</p>
+                    <p class="meme-quote">"Real friendship is saying 'Maran Parotta Kadai Kalugumalai' together 😂"</p>
+                    <button class="share-btn">Share This</button>
+                </div>
+            </div>
+            
+            <div class="meme-card">
+                <img src="..\assets\images\menu\poricha.png" alt="College Life" class="meme-image">
+                <div class="meme-content">
+                    <h3>College Life</h3>
+                    <p>Engineering students discovering Maran Parotta Kadai during exam week.</p>
+                    <p class="meme-quote">"Stress level: 📚 100% → Maran Parotta: 0% 😌"</p>
+                    <button class="share-btn">Share This</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h2>Got a Funny Parotta Meme?</h2>
+            <p>Share your parotta humor with us and get a chance to be featured on our page and win free Parottas!</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="share-btn">Submit Your Meme</a>
+                <a href="menu.html" class="share-btn">Check Our Menu</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p> 2025 Maran Barotta Kadai. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple alert when share button is clicked
+        document.querySelectorAll('.share-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                if (this.textContent === 'Share This') {
+                    alert('Sharing functionality coming soon! For now, screenshot and share on your social media!');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

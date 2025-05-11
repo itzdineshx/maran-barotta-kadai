@@ -1,1 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Maran Barotta Kadai</title>
+    <link rel="icon" type="image/x-icon" href="..\assets\logo\maran-barotta.png"/>
+    <link rel="stylesheet" href="..\src\css\styles.css"/>
+    <style>
+        .contact-container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contact-title {
+            text-align: center;
+            margin-bottom: 1rem;
+            font-family: var(--font-accent);
+            color: var(--color-primary);
+        }
+        
+        .contact-subtitle {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--color-muted);
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+        
+        .contact-info {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-info h3 {
+            color: var(--color-secondary);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-baloo);
+        }
+        
+        .contact-details {
+            margin-bottom: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item p {
+            margin: 0;
+            color: var(--color-text);
+        }
+        
+        .contact-item strong {
+            min-width: 100px;
+            color: var(--color-primary);
+        }
+        
+        .contact-form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-form h3 {
+            color: var(--color-secondary);
+            margin-bottom: 1.5rem;
+            font-family: var(--font-baloo);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--color-text);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            font-family: var(--font-primary);
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--color-accent);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .submit-btn {
+            background-color: var(--color-primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background-color: #b01f33;
+        }
+        
+        .business-hours {
+            margin-top: 2rem;
+        }
+        
+        .hours-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+        }
+        
+        .hours-day {
+            font-weight: 600;
+        }
+        
+        .map-container {
+            margin-top: 3rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
 
+<body>
+    <nav>
+        <img class="logo" src="..\assets\logo\maran-barotta.png" alt="logo"/>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="memes.html">Memes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="..\index.html">Home</a></li>
+        </ul>
+    </nav>
+    
+    <div class="contact-container">
+        <h1 class="contact-title">Get in Touch</h1>
+        <p class="contact-subtitle">We'd love to hear from you! Drop by our restaurant or send us a message.</p>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <strong>Address:</strong>
+                        <p>123 Parotta Street, Chennai, Tamil Nadu 600001</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <strong>Phone:</strong>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <strong>Email:</strong>
+                        <p>info@maranbarottakadai.com</p>
+                    </div>
+                </div>
+                
+                <div class="business-hours">
+                    <h3>Business Hours</h3>
+                    <div class="hours-grid">
+                        <div class="hours-day">Monday - Friday:</div>
+                        <div>11:00 AM - 10:00 PM</div>
+                        
+                        <div class="hours-day">Saturday - Sunday:</div>
+                        <div>10:00 AM - 11:00 PM</div>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9848542895313!2d80.2337887!3d12.9736912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525d639e348d99%3A0x6c769973bb621025!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1652345678901!5m2!1sen!2sin" allowfullscreen="" title="Maran Barotta Kadai Location Map"></iframe>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="reservation">Table Reservation</option>
+                            <option value="order">Order Takeaway</option>
+                            <option value="feedback">Feedback/Review</option>
+                            <option value="careers">Job Application</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p> 2025 Maran Barotta Kadai. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Simple form submission with confirmation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
